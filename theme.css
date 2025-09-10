@@ -1,22 +1,74 @@
 /**
- * @name Dock the fucking bar
- * @description A discord theme that docks the fucking bar
+ * @name Dockety
+ * @description Like rectangles? Hate blobs? This theme is for you!
  * @author Arzumify
- * @version 1.0.0
+ * @version 2.0.0
  * @invite 3G5vZvz9Ay
  * @website https://github.com/Arzumify/dock-the-fucking-bar
  * @source https://github.com/Arzumify/dock-the-fucking-bar/blob/master/theme.css
  * @authorId 1112856031861678150
- * @authorLink https://www.ailur.dev
 */
 
 body {
     --custom-app-panels-height: 50px !important;
+    --panels-border: 1px solid var(--border-faint);
+    --message-wrapper-margin: -10px;
 }
 
-.visual-refresh .panels_c48ade {
+.panels_c48ade {
     bottom: 0;
     left: 0;
     border-radius: 0;
     width: 100%;
+    border-right: var(--hide);
+}
+
+body:has(.chat_f75fb0) {
+    --panels-border: none;
+}
+
+.messagesWrapper__36d07 {
+    margin-bottom: var(--message-wrapper-margin);
+}
+
+.channelTextAreaInner_fb64c9 {
+    border-radius: 0;
+}
+
+.form_f75fb0 {
+    padding: 0;
+}
+
+.inTextChannel_b88801 {
+    border: 1px solid var(--border-faint);
+    background: var(--background-gradient-highest,var(--chat-background-default));
+}
+
+.channelTextArea__74017, .channelTextArea__74017:not(.highlighted__74017) {
+    border-radius: 0;
+    border: 1px solid var(--border-faint);
+    margin: 0;
+    width: 100%;
+}
+
+body:has(.inTextChannel_b88801) {
+    --message-wrapper-margin: 10px;
+    --stacked-bars-bottom: 82px;
+ }
+
+.form_f75fb0:has(.inTextChannel_b88801) > div {
+    border-top: 1px solid var(--border-faint);
+}
+
+.stackedBars__74017 {
+    background: var(--background-gradient-highest,var(--chat-background-default));
+}
+
+.clipContainer__841c8 {
+    padding: 0;
+}
+
+.replyBar__841c8, .stackedBars__74017:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
