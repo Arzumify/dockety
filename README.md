@@ -1,7 +1,7 @@
 # Dockety
 A discord theme that docks all the weird floaty new elements introduced in visual refresh, and replaces them with rectangles.
 
-<img width="1920" height="1040" alt="image" src="https://github.com/user-attachments/assets/4939fa20-7be7-4b5c-ab5c-a4e91e8ea557" />
+<img width="1408" height="728" alt="image" src="https://github.com/user-attachments/assets/5f396541-0283-476f-aed5-6da254292561" />
 
 # Installation
 ## Vencord
