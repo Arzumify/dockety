@@ -33,12 +33,28 @@
         overflow: hidden;
     }
     
-    .inner_c0bea0:not(.profileContentInner__9c3be), .outer_c0bea0:not(.profileContentOuter__9c3be), .channelTextAreaInner_fb64c9 {
+    .container__01ae2, .threadSidebarOpen_f75fb0, .inner_c0bea0:not(.profileContentInner__9c3be), .outer_c0bea0:not(.profileContentOuter__9c3be), .channelTextAreaInner_fb64c9 {
         border-radius: 0 !important;
     }
     
     .aside_f58343, .outer_c0bea0:not(.profileContentOuter__9c3be), .form_f75fb0, .clipContainer__841c8 {
         padding: 0 !important;
+    }
+    
+    .threadSidebarOpen_f75fb0 + div, .divider_ee23ac {
+        display: none;
+    }
+    
+    .chatLayerWrapper__01ae2 {
+        position: initial;
+    }
+    
+    .container__01ae2 {
+        border-left: 0;
+    }
+    
+    .container__34c2c {
+      border-bottom: 1px solid var(--border-subtle);
     }
 
     .panels__5e434 {
