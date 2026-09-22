@@ -1,7 +1,7 @@
 # Dockety
-Back to basics. Dock all the weird float-y elements, align all the elements for atheistic, and get rid of all those annoying panel gaps and inconsistencies discord forgot about.
+A vanilla+ theme. Dock all the weird float-y elements, align all elements together, and fix all the annoying panel gaps and annoyances discord forgot about.
 
-This can essentially be considered a "Vanilla+" experience. It's also designed to be easily composable with other themes and aims to have the minimum possible impact and footprint.
+This theme aims to have the minimum possible footprint and maximum compatibility with other discord themes.
 
 <img width="1408" height="728" alt="image" src="https://github.com/user-attachments/assets/5f396541-0283-476f-aed5-6da254292561" />
 
