@@ -1,5 +1,7 @@
 # Dockety
-A discord theme that docks all the weird floaty new elements introduced in visual refresh, and replaces them with rectangles.
+Back to basics. Dock all the weird float-y elements, align all the elements for atheistic, and get rid of all those annoying panel gaps and inconsistencies discord forgot about.
+
+This can essentially be considered a "Vanilla+" experience. It's also designed to be easily composable with other themes and aims to have the minimum possible impact and footprint.
 
 <img width="1408" height="728" alt="image" src="https://github.com/user-attachments/assets/5f396541-0283-476f-aed5-6da254292561" />
 
