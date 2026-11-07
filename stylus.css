@@ -5,8 +5,8 @@
  * @author Arzumify
  * @version 2.1.0
  * @invite 3G5vZvz9Ay
- * @website https://github.com/Arzumify/dockety
- * @source https://github.com/Arzumify/dockety/blob/master/theme.css
+ * @website https://github.com/Arzumify/dock-the-fucking-bar
+ * @source https://github.com/Arzumify/dock-the-fucking-bar/blob/master/theme.css
  * @authorId 1112856031861678150
 */
 /* ==UserStyle==
@@ -16,6 +16,10 @@
  @license MPL-2.0
  @author Arzumify
  @version 2.1.0
+ @invite 3G5vZvz9Ay
+ @website https://github.com/Arzumify/dock-the-fucking-bar
+ @source https://github.com/Arzumify/dock-the-fucking-bar/blob/master/theme.css
+ @authorId 1112856031861678150
 ==/UserStyle== */
 @-moz-document domain("discord.com") {
     :root {
@@ -26,82 +30,166 @@
 @container enable-dockety {
     body {
         --custom-app-panels-height: 50px !important;
-        --panels-border: 1px solid var(--border-faint);
         --message-wrapper-margin: -10px;
     }
-    .contentWrapper__08434 {
-        overflow: hidden;
+
+    /*
+    You panel
+    */
+    .panels_pog62O {
+        /* Resets you panel to bottom left */
+        bottom: 0;
+        left: 0;
+        
+        /* Un-squircles the you panel */
+        border-radius: 0;
+        width: 100%;
+        
+        /* Fix borders */
+        border-left: 0;
+        border-bottom: 0;
+        border-right: 0;
+    }
+
+    /*
+    Chatbox (outer)
+    */
+    .form_z_gUBg {
+        /* Adds a border and removes padding */
+        border-top: 1px solid var(--border-subtle);
+        padding: 0;
+        margin-top: 0;
+        
+        /* Allows for easier positioning */
+        flex-direction: column-reverse;
+        display: flex;
     }
     
-    .container__01ae2, .threadSidebarOpen_f75fb0, .inner_c0bea0:not(.profileContentInner__9c3be), .outer_c0bea0:not(.profileContentOuter__9c3be), .channelTextAreaInner_fb64c9 {
-        border-radius: 0 !important;
+    /*
+    Chatbox (inner)
+    */
+    .channelTextArea_z_gUBg {
+        border: none;
+        margin: 0;
+    }
+
+    /*
+    Chatbox (middle)
+    */
+    .scrollableContainer_2x8-Qn {
+        border-radius: 0;
     }
     
-    .aside_f58343, .outer_c0bea0:not(.profileContentOuter__9c3be), .form_f75fb0, .clipContainer__841c8 {
-        padding: 0 !important;
+    /* Threads creation chatbox (outer) */
+    .submitContainer_UU236g {
+        border-top: 1px solid var(--border-subtle);
+        display: flex;
+        flex-direction: column-reverse;
     }
     
-    .threadSidebarOpen_f75fb0 + div, .divider_ee23ac {
+    /* Threads creation chatbox (inner) */
+    .channelTextArea_UU236g.channelTextAreaWithTypingIndicator_UU236g {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+    }
+    
+    /* Chat */
+    .chat_z_gUBg.threadSidebarOpen_z_gUBg {
+        border-radius: 0;
+    }
+    
+    /* Thread placeholder */
+    .page_pog62O > div > div:nth-child(2) {
         display: none;
     }
     
-    .chatLayerWrapper__01ae2 {
+    /* Thread container (outer) */
+    .chatLayerWrapper_FrbQJp {
         position: initial;
     }
     
-    .container__01ae2 {
+    /* Thread container (inner) */
+    .container_FrbQJp {
+        border-radius: 0;
         border-left: 0;
     }
+
+    /*
+    Attachments area
+    */
+    .channelAttachmentArea_iH8bsl {
+        padding: 10px 10px 0 10px;
+    }
+
+    /*
+    Slowmode
+    */
+    .inTextChannel_U9Tvvz {
+        background: var(--background-gradient-highest, var(--chat-background-default));
+        
+        /* Don't absolutely position */
+        position: initial;
+    }
     
-    .container__34c2c {
-      border-bottom: 1px solid var(--border-subtle);
-    }
-
-    .panels__5e434 {
-        bottom: 0;
-        left: 0;
+    /* Reply bar */
+    .clipContainer_rE8-46 {
         border-radius: 0;
-        width: 100%;
-        border-right: var(--hide);
+        padding: 0;
     }
-
-    body:has(.chat_f75fb0) {
-        --panels-border: none;
-    }
-
-    .messagesWrapper__36d07 {
-        margin-bottom: var(--message-wrapper-margin);
-    }
-
-    .inTextChannel_b88801 {
-        border: 1px solid var(--border-faint);
-        background: var(--background-gradient-highest, var(--chat-background-default));
-    }
-
-    .channelTextArea__74017,
-    .channelTextArea__74017:not(.highlighted__74017) {
-        border-radius: 0;
-        border: 1px solid var(--border-faint);
+    
+    /* Follow announcements bar */
+    .wrapper_ST_Y69 {
         margin: 0;
-        width: 100%;
+        border-radius: 0;
+        border: none;
+    }
+    
+    /* Profile bar (outer) */
+    .aside_HbUF2J {
+        padding: 0;
+    }
+    
+    /* Profile bar (inner) */
+    .outer_P1YEjQ.user-profile-sidebar {
+        border-radius: 0;
+        padding: 0;
+    }
+    
+    /* Profile bar (even more inner) */
+    .outer_P1YEjQ.user-profile-sidebar > .inner_P1YEjQ {
+        border-radius: 0;
     }
 
-    body:has(.inTextChannel_b88801) {
-        --message-wrapper-margin: 10px;
-        --stacked-bars-bottom: 82px;
+    /*
+    Fixes messages being too high up
+    */
+    .scrollerSpacer_8AE1Qq {
+        height: 16px;
     }
-
-    .form_f75fb0:has(.inTextChannel_b88801) > div {
-        border-top: 1px solid var(--border-faint);
+    
+    /* Removes the messagebox gradient */
+    .chatGradientBase_8AE1Qq {
+        display: none;
     }
-
-    .stackedBars__74017 {
-        background: var(--background-gradient-highest, var(--chat-background-default));
+    
+    /* Fixes margin at the bottom of search results */
+    .searchResultGroup_3Zk3yP {
+        margin-bottom: 16px;
     }
-
-    .replyBar__841c8,
-    .stackedBars__74017:first-child {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+    
+    /* Fixes inconsistent margins in the pins bar */
+    .messagesPopout_6bgemo {
+        padding-inline: 8px;
+    }
+    
+    /* Fixes inconsistent margins in the pins bar */
+    .messageGroupWrapper_6bgemo {
+        margin-right: 0;
+    }
+    
+    /* Fixes inconsistent margins in the threads bar */
+    .list_6_wQXw {
+        padding-bottom: 8px;
     }
 }
